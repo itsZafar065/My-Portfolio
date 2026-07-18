@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowRight, Mail, Box, Image as ImageIcon, Tag, Terminal, Play, FileCode, FileJson } from 'lucide-react';
+import { ArrowRight, Mail, Box, Image as ImageIcon, Tag, Terminal, Play, FileCode, FileJson, Palette, Database, Code, Cpu, Sparkles } from 'lucide-react';
 import { projects } from '../data/projects';
 
 export default function Home({ setPage, onSelectProject }) {
@@ -43,41 +43,70 @@ export default function Home({ setPage, onSelectProject }) {
       {/* Hero Section */}
       <section className="hero" id="home">
         <div className="container hero-grid">
-          <div className="hero-content">
+          <div className="hero-content animate-slide-up">
             <div className="hero-tag">
-              <span></span> Open to work & collaboration
+              <Sparkles size={14} style={{ marginRight: '0.2rem' }} /> Open to work & collaborations
             </div>
             <h1 className="hero-title">
-              Architecting <span>Digital Products</span> from Figma to Code
+              Bridging the Gap Between <span>Design & Clean Code</span>
             </h1>
             <p className="hero-desc">
-              Hi, Zafar Muhammad here. A Senior Architect-level developer specializing in the MERN Stack, Figma Design Systems, and WordPress custom theme integrations. I craft blazing-fast, responsive user experiences with aesthetic precision.
+              Hi, I'm Zafar Muhammad. I'm a full-stack developer who loves designing and building clean, responsive web applications. With expertise in the MERN Stack, Figma design systems, and WordPress development, I build web interfaces that feel premium, load fast, and work beautifully on any device.
             </p>
             <div className="hero-actions">
               <button onClick={() => setPage('projects')} className="btn btn-primary" style={{ border: 'none', cursor: 'pointer' }}>
-                View Showcase <ArrowRight size={16} />
+                View My Projects <ArrowRight size={16} />
               </button>
               <button onClick={() => setPage('contact')} className="btn btn-secondary" style={{ cursor: 'pointer' }}>
-                Get in Touch <Mail size={16} />
+                Let's Talk <Mail size={16} />
               </button>
             </div>
           </div>
           
           <div className="hero-visual" aria-hidden="true">
             <div className="visual-backdrop"></div>
-            <div className="glass-object">
-              <div className="glass-object-inner">
-                <span className="glass-obj-badge">Senior Architect</span>
-                <div className="glass-obj-logo">ZM</div>
-                <p style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.7)', lineHeight: 1.4 }}>
-                  Full Stack MERN<br />
-                  Figma UI/UX Specialist<br />
-                  WordPress Engineer
-                </p>
+            
+            {/* Modern glass workspace card */}
+            <div className="glass-workspace-card glass-card">
+              <div className="workspace-header-bar">
+                <span className="dot dot-red"></span>
+                <span className="dot dot-yellow"></span>
+                <span className="dot dot-green"></span>
+                <span className="window-title">zafar_muhammad.json</span>
               </div>
-              <div className="glass-obj-footer">
-                <span>Exp: 3+ Years</span>
-                <span>v3.0.0</span>
+              <div className="workspace-code-body">
+                <div className="code-line"><span className="code-key">"name"</span>: <span className="code-val">"Zafar Muhammad"</span>,</div>
+                <div className="code-line"><span className="code-key">"role"</span>: <span className="code-val">"Full Stack Developer"</span>,</div>
+                <div className="code-line"><span className="code-key">"stack"</span>: [</div>
+                <div className="code-line indent"><span className="code-val">"React"</span>, <span className="code-val">"NodeJS"</span>, <span className="code-val">"MongoDB"</span>,</div>
+                <div className="code-line indent"><span className="code-val">"Figma"</span>, <span className="code-val">"WordPress"</span></div>
+                <div className="code-line">  ],</div>
+                <div className="code-line"><span className="code-key">"focus"</span>: <span className="code-val">"Clean UI & Smooth UX"</span></div>
+              </div>
+            </div>
+
+            {/* Floating design palette card */}
+            <div className="floating-card design-palette-card glass-card">
+              <div className="floating-card-header">
+                <Palette size={14} className="accent-color" />
+                <span>Theme Colors</span>
+              </div>
+              <div className="palette-colors">
+                <span className="color-swatch sw-primary"></span>
+                <span className="color-swatch sw-secondary"></span>
+                <span className="color-swatch sw-accent"></span>
+              </div>
+            </div>
+
+            {/* Floating database status card */}
+            <div className="floating-card server-status-card glass-card">
+              <div className="floating-card-header">
+                <Database size={14} className="secondary-color" />
+                <span>Database</span>
+              </div>
+              <div className="server-status">
+                <span className="status-indicator online"></span>
+                <span>Connected</span>
               </div>
             </div>
           </div>
@@ -88,19 +117,28 @@ export default function Home({ setPage, onSelectProject }) {
       <section className="stats section-padding">
         <div className="container stats-grid">
           <div className="stat-item glass-card animate-fade-in">
-            <div className="stat-num">3+</div>
+            <div className="stat-num-container">
+              <Cpu size={24} className="stat-icon" />
+              <div className="stat-num">3+</div>
+            </div>
             <h3 className="stat-title">Years Experience</h3>
-            <p className="stat-desc">Building and shipping responsive web apps.</p>
+            <p className="stat-desc">Working with clients and teams to ship high-quality products.</p>
           </div>
           <div className="stat-item glass-card animate-fade-in">
-            <div className="stat-num">40+</div>
+            <div className="stat-num-container">
+              <Code size={24} className="stat-icon" />
+              <div className="stat-num">40+</div>
+            </div>
             <h3 className="stat-title">Projects Shipped</h3>
-            <p className="stat-desc">Custom MERN platforms, Figma systems & WP nodes.</p>
+            <p className="stat-desc">Delivering functional websites, custom dashboards, and design assets.</p>
           </div>
           <div className="stat-item glass-card animate-fade-in">
-            <div className="stat-num">100%</div>
-            <h3 className="stat-title">Client Retention</h3>
-            <p className="stat-desc">Delivering standards of Senior Architect levels.</p>
+            <div className="stat-num-container">
+              <Sparkles size={24} className="stat-icon" />
+              <div className="stat-num">100%</div>
+            </div>
+            <h3 className="stat-title">Satisfaction Rate</h3>
+            <p className="stat-desc">Ensuring clean code, clear communication, and client success.</p>
           </div>
         </div>
       </section>
@@ -110,7 +148,7 @@ export default function Home({ setPage, onSelectProject }) {
         <div className="container">
           <div className="workspace-intro">
             <h2>Interactive Workspace Sandbox</h2>
-            <p>Explore Zafar's multi-disciplinary development workflows. Toggle between designing high-fidelity layouts, testing backends, or adjusting live WordPress variables below.</p>
+            <p>A quick look at how I work. Toggle below to see a preview of my design inspections in Figma, backend API configurations, or live theme customizer controls.</p>
           </div>
 
           <div className="workspace-tabs">
@@ -382,9 +420,9 @@ export default function App() {
       {/* Featured Projects Section */}
       <section className="portfolio section-padding" id="featured-projects">
         <div className="container">
-          <h2>Featured Showcase</h2>
+          <h2>Featured Projects</h2>
           <p style={{ textAlign: 'center', color: 'var(--color-text-secondary)', maxWidth: '600px', margin: '0 auto 3rem' }}>
-            A handpicked selection of premium web systems. Click on any card to read the complete glassmorphic case study detail.
+            A selection of my recent full-stack applications, interactive dashboards, and design integrations. Click on any card to read the detailed case study.
           </p>
           
           <div className="portfolio-grid">

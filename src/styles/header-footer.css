@@ -88,35 +88,37 @@
 
 .nav-link {
   font-family: var(--font-heading);
-  font-weight: 500;
-  font-size: 0.95rem;
+  font-weight: 600;
+  font-size: 0.92rem;
   color: var(--color-text-secondary);
-  position: relative;
-  padding: 0.5rem 0;
+  background: transparent;
+  border: 1px solid transparent;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  border-radius: 9999px;
+  transition: all var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
 }
 
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: var(--grad-primary);
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform var(--transition-fast);
+.nav-link:hover {
+  color: var(--color-text-primary);
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.06);
 }
 
-.nav-link:hover,
+[data-theme="light"] .nav-link:hover {
+  background: rgba(15, 23, 42, 0.03);
+  border-color: rgba(15, 23, 42, 0.06);
+}
+
 .nav-link.active {
   color: var(--color-text-primary);
-}
-
-.nav-link:hover::after,
-.nav-link.active::after {
-  transform: scaleX(1);
-  transform-origin: left;
+  background: var(--glass-bg);
+  border: 1px solid var(--color-primary);
+  box-shadow: 0 0 15px rgba(var(--color-primary-rgb), 0.15);
 }
 
 .nav-actions {

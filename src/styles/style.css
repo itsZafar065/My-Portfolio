@@ -197,9 +197,20 @@ img {
 }
 
 /* Focus styles for Accessibility */
-input:focus, textarea:focus, select:focus, button:focus {
+input:focus, textarea:focus, select:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.2);
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:focus-visible, a:focus-visible {
   outline: 2px solid var(--color-primary);
   outline-offset: 2px;
+  border-radius: var(--radius-sm);
 }
 
 /* Responsive adjustments */

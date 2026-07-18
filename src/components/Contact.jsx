@@ -63,9 +63,9 @@ export default function Contact() {
       {/* Contact Section */}
       <section className="contact section-padding">
         <div className="container">
-          <h2>Let's Craft Something Epic</h2>
+          <h2>Get in Touch</h2>
           <p style={{ textAlign: 'center', color: 'var(--color-text-secondary)', maxWidth: '600px', margin: '0 auto 3rem' }}>
-            Ready to take your product to the next level? Fill out the form below or message me directly through my professional links.
+            Have a project in mind, looking to hire a developer, or just want to connect? Send me a message using the form or reach out directly.
           </p>
           
           <div className="contact-grid">
@@ -73,7 +73,7 @@ export default function Contact() {
             {/* Info Cards Column */}
             <div className="contact-info">
               <p style={{ fontSize: '1.1rem', marginBottom: '1.5rem' }}>
-                Have a project proposal, looking for a senior resource, or want to discuss architecture designs? Reach out directly via form or networks.
+                I am always open to discussing new projects, collaboration opportunities, or general development needs.
               </p>
               
               <div className="contact-card-wrapper">

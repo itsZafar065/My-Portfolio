@@ -27,9 +27,9 @@ export default function Projects({ setPage, onSelectProject }) {
       {/* Portfolio Section */}
       <section className="portfolio section-padding">
         <div className="container">
-          <h2>Engineering Masterpieces</h2>
+          <h2>My Projects</h2>
           <p style={{ textAlign: 'center', color: 'var(--color-text-secondary)', maxWidth: '600px', margin: '0 auto 3rem' }}>
-            A comprehensive selection of premium web systems, interactive customer dashboards, high-fidelity Figma design kits, and customized CMS systems.
+            A selection of my web applications, backend APIs, user interface design systems, and custom theme integrations.
           </p>
           
           {/* Filters Bar */}

@@ -37,17 +37,7 @@ export default function Header({ currentPage, setPage, theme, toggleTheme }) {
             <button
               key={link.id}
               onClick={() => handleNavClick(link.id)}
-              className={`nav-link-btn ${currentPage === link.id ? 'active' : ''}`}
-              style={{
-                background: 'none',
-                border: 'none',
-                fontFamily: 'inherit',
-                cursor: 'pointer',
-                fontSize: 'inherit',
-                fontWeight: 'inherit',
-                color: 'inherit',
-                padding: '0.5rem 1rem'
-              }}
+              className={`nav-link ${currentPage === link.id ? 'active' : ''}`}
             >
               {link.label}
             </button>
@@ -106,18 +96,7 @@ export default function Header({ currentPage, setPage, theme, toggleTheme }) {
             <button
               key={link.id}
               onClick={() => handleNavClick(link.id)}
-              className={`nav-link-btn ${currentPage === link.id ? 'active' : ''}`}
-              style={{
-                background: 'none',
-                border: 'none',
-                fontFamily: 'inherit',
-                cursor: 'pointer',
-                fontSize: '1.1rem',
-                fontWeight: '600',
-                color: 'inherit',
-                textAlign: 'left',
-                padding: '0.5rem 0'
-              }}
+              className={`nav-link ${currentPage === link.id ? 'active' : ''}`}
             >
               {link.label}
             </button>
