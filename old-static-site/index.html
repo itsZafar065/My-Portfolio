@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zafar Muhammad | Senior Full-Stack MERN Developer, Figma UI/UX Designer & WordPress Architect</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Zafar Muhammad, a Senior Architect-level MERN developer, Figma UI/UX designer, and WordPress developer with 3+ years of experience building scalable, responsive web solutions.">
+  <meta name="keywords" content="MERN Stack Developer, React Developer, Figma Designer, WordPress Expert, Web Architect, Responsive Web Design, NodeJS, ExpressJS, MongoDB">
+  <meta name="author" content="Zafar Muhammad">
+  
+  <!-- Favicon (Premium ZM Logo Badge) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a0a0c'/%3E%3Ctext y='1.15em' x='5' font-family='Plus Jakarta Sans, sans-serif' font-weight='800' font-size='65' fill='url(%23g)'%3EZM%3C/text%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%236366f1'/%3E%3Cstop offset='100%25' stop-color='%2306b6d4'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header-footer.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Ambient Backdrop -->
+  <div class="background-container" aria-hidden="true">
+    <div class="dot-grid"></div>
+    <div class="spotlight"></div>
+  </div>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress" id="scroll-bar"></div>
+
+  <!-- Header Navigation -->
+  <header class="header" id="nav-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-container" id="logo-brand">
+        <div class="logo-box">ZM</div>
+        <span class="logo-text">Zafar</span>
+      </a>
+      
+      <nav class="nav-menu" id="navigation-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      
+      <div class="nav-actions">
+        <!-- Light / Dark Mode Toggle -->
+        <button class="theme-toggle" id="theme-button" aria-label="Toggle Theme Mode">
+          <i data-lucide="moon" class="moon-icon"></i>
+          <i data-lucide="sun" class="sun-icon"></i>
+        </button>
+        <a href="contact.html" class="btn btn-secondary" style="padding: 0.6rem 1.2rem;">Let's Talk</a>
+        <button class="mobile-menu-toggle" id="menu-toggle-btn" aria-label="Toggle Mobile Menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span></span> Open to work & collaboration
+          </div>
+          <h1 class="hero-title">
+            Architecting <span>Digital Products</span> from Figma to Code
+          </h1>
+          <p class="hero-desc">
+            Hi, Zafar Muhammad here. A Senior Architect-level developer specializing in the MERN Stack, Figma Design Systems, and WordPress custom theme integrations. I craft blazing-fast, responsive user experiences with aesthetic precision.
+          </p>
+          <div class="hero-actions">
+            <a href="projects.html" class="btn btn-primary">
+              View Showcase <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="contact.html" class="btn btn-secondary">
+              Get in Touch <i data-lucide="mail"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-backdrop"></div>
+          <div class="glass-object">
+            <div class="glass-object-inner">
+              <span class="glass-obj-badge">Senior Architect</span>
+              <div class="glass-obj-logo">ZM</div>
+              <p style="font-size: 0.85rem; color: rgba(255,255,255,0.7);">
+                Full Stack MERN<br>
+                Figma UI/UX Specialist<br>
+                WordPress Engineer
+              </p>
+            </div>
+            <div class="glass-obj-footer">
+              <span>Exp: 3+ Years</span>
+              <span>v3.0.0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats section-padding">
+      <div class="container stats-grid">
+        <div class="stat-item glass-card">
+          <div class="stat-num" data-target="3" data-suffix="+">3+</div>
+          <h3 class="stat-title">Years Experience</h3>
+          <p class="stat-desc">Building and shipping responsive web apps.</p>
+        </div>
+        <div class="stat-item glass-card">
+          <div class="stat-num" data-target="40" data-suffix="+">40+</div>
+          <h3 class="stat-title">Projects Shipped</h3>
+          <p class="stat-desc">Custom MERN platforms, Figma systems & WP nodes.</p>
+        </div>
+        <div class="stat-item glass-card">
+          <div class="stat-num" data-target="100" data-suffix="%">100%</div>
+          <h3 class="stat-title">Client Retention</h3>
+          <p class="stat-desc">Delivering standards of Senior Architect levels.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Workspaces (Sandbox) -->
+    <section class="workspace-section section-padding" id="workspaces">
+      <div class="container">
+        <div class="workspace-intro">
+          <h2>Interactive Workspace Sandbox</h2>
+          <p>Explore Zafar's multi-disciplinary development workflows. Toggle between designing high-fidelity layouts, testing backends, or adjusting live WordPress variables below.</p>
+        </div>
+
+        <div class="workspace-tabs">
+          <button class="workspace-tab active" data-tab="figma">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"/><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"/></svg> Figma UI Canvas
+          </button>
+          <button class="workspace-tab" data-tab="vscode">
+            <i data-lucide="terminal"></i> MERN Console (VS Code)
+          </button>
+          <button class="workspace-tab" data-tab="wp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m16 8-3.4 9.6-2.1-6.1-2.1 6.1L5.6 8"/><path d="M12 22a10 10 0 0 1-5.6-1.7l3-8.6 2.3 6.6 2.3-6.6 2.7 7.7A10 10 0 0 1 12 22z"/></svg> WordPress Configurator
+          </button>
+        </div>
+
+        <div class="workspace-content-wrapper">
+          
+          <!-- Figma Panel -->
+          <div class="workspace-pane active" id="figma-pane">
+            <div class="workspace-canvas-wrapper">
+              <div class="figma-canvas">
+                <div class="figma-sidebar">
+                  <div style="font-weight: 700;">Layers</div>
+                  <div class="figma-layer-item active" data-element="card-container">
+                    <i data-lucide="box"></i> Card-Container
+                  </div>
+                  <div class="figma-layer-item" data-element="card-image">
+                    <i data-lucide="image"></i> Card-Image
+                  </div>
+                  <div class="figma-layer-item" data-element="badge-pill">
+                    <i data-lucide="tag"></i> Badge-Pill
+                  </div>
+                </div>
+                
+                <div class="figma-artboard">
+                  <div class="figma-card-preview" id="figma-preview-card">
+                    <div class="figma-card-image"></div>
+                    <div style="font-size: 0.9rem; font-weight:700; color: #fff; margin-bottom: 0.5rem;">Figma Design Component</div>
+                    <p style="font-size: 0.75rem; color: #aaa; margin-bottom: 1rem;">Select elements on the left side to inspect specs dynamically.</p>
+                    <div class="figma-prop-group">
+                      <span class="glass-obj-badge" style="font-size:0.6rem; padding:0.1rem 0.4rem;">UI Spec</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="figma-sidebar right">
+                  <div style="font-weight: 700;">Inspect Properties</div>
+                  <div class="figma-prop-group" style="margin-top: 1rem; font-size: 0.8rem;">
+                    <div class="figma-prop-row"><span>Width</span> <span id="inspect-width" style="color: #4fc1ff;">320px</span></div>
+                    <div class="figma-prop-row"><span>Height</span> <span id="inspect-height" style="color: #4fc1ff;">320px</span></div>
+                    <div class="figma-prop-row"><span>Radius</span> <span id="inspect-radius" style="color: #4fc1ff;">16px</span></div>
+                    <div class="figma-prop-row"><span>Fill</span> <span id="inspect-fill" style="color: #4fc1ff;">rgba(255, 255, 255, 0.05)</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- VS Code Panel -->
+          <div class="workspace-pane" id="vscode-pane">
+            <div class="workspace-canvas-wrapper">
+              <div class="vscode-editor">
+                <div class="vscode-header">
+                  <div class="vscode-tabs-container">
+                    <div class="vscode-file-tab active" data-file="server.js">
+                      <i data-lucide="file-code" style="color:#ce9178;"></i> server.js
+                    </div>
+                    <div class="vscode-file-tab" data-file="App.jsx">
+                      <i data-lucide="file-json" style="color:#569cd6;"></i> App.jsx
+                    </div>
+                  </div>
+                  <button class="vscode-run-btn" id="run-backend-btn">
+                    <i data-lucide="play" style="width: 14px;"></i> Run Server
+                  </button>
+                </div>
+                
+                <div class="vscode-body">
+                  <div class="vscode-line-numbers">
+                    1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20
+                  </div>
+                  <div class="vscode-code-content" id="vscode-code">const express = require('express');
+const mongoose = require('mongoose');
+const cors = require('cors');
+const app = express();
+
+<span class="syntax-comment">// MERN Backend Database API Setup</span>
+app.use(cors());
+app.use(express.json());
+
+const projectSchema = new mongoose.Schema({
+  title: String,
+  type: String,
+  tech: [String]
+});
+
+const Project = mongoose.model('Project', projectSchema);
+
+app.get('/api/projects', async (req, res) => {
+  const list = await Project.find();
+  res.json({ success: true, count: list.length, data: list });
+});</div>
+                </div>
+
+                <div class="vscode-terminal">
+                  // Press the green "Run Server" button above to run Express + MongoDB server setup...
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- WordPress Panel -->
+          <div class="workspace-pane" id="wp-pane">
+            <div class="workspace-canvas-wrapper">
+              <div class="wp-customizer">
+                <div class="wp-panel">
+                  <div class="wp-panel-header">Customizer Settings</div>
+                  
+                  <div class="wp-control-group">
+                    <label class="wp-control-label" for="wp-color-select">Active Theme Color</label>
+                    <select class="wp-control-select" id="wp-color-select">
+                      <option value="indigo">Deep Indigo Theme</option>
+                      <option value="teal">Dark Teal Theme</option>
+                      <option value="pink">Ruby Pink Theme</option>
+                      <option value="emerald">Emerald Theme</option>
+                    </select>
+                  </div>
+
+                  <div class="wp-control-group">
+                    <label class="wp-control-label" for="wp-layout-select">Hero Text Alignment</label>
+                    <select class="wp-control-select" id="wp-layout-select">
+                      <option value="minimal">Centered Layout</option>
+                      <option value="boxed">Left-Aligned</option>
+                      <option value="wide">Right-Aligned</option>
+                    </select>
+                  </div>
+
+                  <div class="wp-control-group">
+                    <label class="wp-control-label" for="wp-title-input">Mock Title</label>
+                    <input type="text" class="wp-control-color" id="wp-title-input" placeholder="Zafar Portfolio">
+                  </div>
+                </div>
+                
+                <div class="wp-preview-screen">
+                  <div class="wp-mock-site">
+                    <div class="wp-mock-header" id="mock-site-header" style="background:#312e81;">
+                      <div id="mock-site-logo" style="font-weight: 700; color:#c7d2fe;">Zafar Theme</div>
+                      <div style="font-size:0.75rem; display:flex; gap:1rem;">
+                        <span>Home</span>
+                        <span>Blog</span>
+                      </div>
+                    </div>
+                    <div class="wp-mock-hero" id="mock-site-hero">
+                      <h4 id="mock-site-title" style="font-size:1.5rem; font-weight:700; margin-bottom: 0.5rem; color:#111;">Zafar Portfolio</h4>
+                      <p style="font-size:0.8rem; color:#555;">WordPress theme variables responsive customize simulator.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="portfolio section-padding" id="featured-projects">
+      <div class="container">
+        <h2>Featured Showcase</h2>
+        <p style="text-align:center; color:var(--color-text-secondary); max-width:600px; margin:0 auto 3rem;">A handpicked selection of premium web systems. Click on any card to read the complete glassmorphic case study detail.</p>
+        
+        <div class="portfolio-grid" id="portfolio-grid">
+          <!-- Dynamically populated (Only highlights will show up via script) -->
+        </div>
+
+        <div style="text-align: center; margin-top: 4rem;">
+          <a href="projects.html" class="btn btn-primary">
+            View All Projects <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Navigation -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="index.html" class="logo-container">
+            <div class="logo-box">ZM</div>
+            <span class="logo-text">Zafar</span>
+          </a>
+          <p class="footer-tagline" style="margin-top:0.5rem;">Senior Architect MERN, Figma and WordPress Developer with 3+ years experience.</p>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/itsZafar065" target="_blank" class="social-link" aria-label="GitHub Link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          </a>
+          <a href="#" target="_blank" class="social-link" aria-label="LinkedIn Link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" target="_blank" class="social-link" aria-label="Figma Profile Link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"/><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"/></svg>
+          </a>
+          <a href="#" target="_blank" class="social-link" aria-label="WordPress Profile Link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m16 8-3.4 9.6-2.1-6.1-2.1 6.1L5.6 8"/><path d="M12 22a10 10 0 0 1-5.6-1.7l3-8.6 2.3 6.6 2.3-6.6 2.7 7.7A10 10 0 0 1 12 22z"/></svg>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Zafar Muhammad. All rights reserved.</p>
+        <p>Crafted for Senior Architect portfolio showcase.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts - CDNs first, then custom modules -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+  
+  <script src="js/main.js"></script>
+  <script src="js/workspace.js"></script>
+  <script src="js/portfolio.js"></script>
+</body>
+</html>
