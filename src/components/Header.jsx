@@ -61,8 +61,8 @@ export default function Header({ currentPage, setPage, theme, toggleTheme }) {
           
           <button 
             onClick={() => handleNavClick('contact')}
-            className="btn btn-secondary talk-btn-desktop" 
-            style={{ padding: '0.6rem 1.2rem', cursor: 'pointer' }}
+            className="btn btn-primary neon-glow-primary talk-btn-desktop" 
+            style={{ borderRadius: '9999px', padding: '0.6rem 1.4rem', border: 'none', cursor: 'pointer' }}
           >
             Let's Talk
           </button>

@@ -165,7 +165,7 @@ export default function Contact() {
                 <label htmlFor="message" className="form-label">Message details</label>
               </div>
 
-              <button type="submit" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center', border: 'none', cursor: 'pointer' }}>
+              <button type="submit" className="btn btn-primary neon-glow-primary" style={{ width: '100%', justifyContent: 'center', border: 'none', cursor: 'pointer' }}>
                 Send Message <Send size={16} style={{ marginLeft: '0.4rem' }} />
               </button>
             </form>

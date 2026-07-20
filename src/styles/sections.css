@@ -1270,8 +1270,9 @@ textarea.form-input {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: var(--glass-border);
+  background: linear-gradient(to bottom, var(--color-primary), var(--color-secondary));
   transform: translateX(-50%);
+  opacity: 0.4;
 }
 
 .about-timeline-item {
@@ -1286,20 +1287,27 @@ textarea.form-input {
   position: absolute;
   left: 50%;
   top: 12px;
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   background: var(--color-primary);
-  box-shadow: 0 0 10px var(--color-primary);
+  box-shadow: 0 0 12px var(--color-primary);
   transform: translateX(-50%);
   z-index: 2;
   transition: all var(--transition-fast);
+  animation: timelinePulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes timelinePulse {
+  0%, 100% { opacity: 1; transform: translateX(-50%) scale(1); }
+  50% { opacity: 0.5; transform: translateX(-50%) scale(1.2); }
 }
 
 .about-timeline-item:hover .about-timeline-dot {
   background: var(--color-secondary);
   box-shadow: 0 0 15px var(--color-secondary);
-  transform: translateX(-50%) scale(1.2);
+  transform: translateX(-50%) scale(1.3);
+  animation-play-state: paused;
 }
 
 @media (max-width: 900px) {

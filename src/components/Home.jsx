@@ -51,10 +51,10 @@ export default function Home({ setPage, onSelectProject }) {
               Bridging the Gap Between <span>Design & Clean Code</span>
             </h1>
             <p className="hero-desc">
-              Hi, I'm Zafar Muhammad. I'm a full-stack developer who loves designing and building clean, responsive web applications. With expertise in the MERN Stack, Figma design systems, and WordPress development, I build web interfaces that feel premium, load fast, and work beautifully on any device.
+              Senior MERN Developer & Figma UI Architect crafting pixel-perfect, high-performance digital experiences that scale with your business.
             </p>
             <div className="hero-actions">
-              <button onClick={() => setPage('projects')} className="btn btn-primary" style={{ border: 'none', cursor: 'pointer' }}>
+              <button onClick={() => setPage('projects')} className="btn btn-primary neon-glow-primary" style={{ border: 'none', cursor: 'pointer' }}>
                 View My Projects <ArrowRight size={16} />
               </button>
               <button onClick={() => setPage('contact')} className="btn btn-secondary" style={{ cursor: 'pointer' }}>
@@ -457,7 +457,7 @@ export default function App() {
           <div style={{ textAlign: 'center', marginTop: '4rem' }}>
             <button 
               onClick={() => { setPage('projects'); window.scrollTo({ top: 0 }); }} 
-              className="btn btn-primary"
+              className="btn btn-primary neon-glow-primary"
               style={{ border: 'none', cursor: 'pointer' }}
             >
               View All Projects <ArrowRight size={16} />

@@ -5,7 +5,7 @@ export const projects = [
     category: 'mern',
     desc: 'A custom CRM and booking portal designed for client management. It features search indexing and automated queues to handle user bookings efficiently.',
     tech: ['React', 'Node.js', 'MongoDB', 'Express', 'JWT Auth'],
-    image: 'https://images.unsplash.com/photo-1552581230-c01591d6f597?auto=format&fit=crop&w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80',
     github: 'https://github.com/itsZafar065',
     demo: '#',
     client: 'Consultancy Services',

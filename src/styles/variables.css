@@ -1,11 +1,11 @@
-/* CSS Variables - Design System (Updated with Plus Jakarta Sans) */
+/* CSS Variables - Design System (Updated with Stitch - Outfit & Inter) */
 
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap');
 
 :root {
   /* Fonts */
-  --font-primary: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-  --font-heading: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Outfit', system-ui, -apple-system, sans-serif;
 
   /* Transitions */
   --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -13,37 +13,39 @@
   --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 
   /* Borders & Radius */
-  --radius-xs: 6px;
-  --radius-sm: 12px;
-  --radius-md: 20px;
-  --radius-lg: 32px;
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 24px;
   --radius-circle: 50%;
 
-  /* Dark Theme Default Tokens */
-  --bg-main: #0a0a0c;
-  --bg-dot: rgba(255, 255, 255, 0.03);
-  --color-text-primary: #f8fafc;
-  --color-text-secondary: #94a3b8;
-  --color-text-muted: #64748b;
+  /* Dark Theme Default Tokens (Stitch Neon Synthesis) */
+  --bg-main: #0a0e17;
+  --bg-dot: rgba(255, 255, 255, 0.02);
+  --color-text-primary: #e4e1ed;
+  --color-text-secondary: #c7c4d7;
+  --color-text-muted: #908fa0;
   
   --color-primary: #6366f1; /* Neon Indigo */
   --color-primary-rgb: 99, 102, 241;
-  --color-secondary: #06b6d4; /* Electric Teal */
+  --color-secondary: #06b6d4; /* Electric Teal/Cyan */
   --color-secondary-rgb: 6, 182, 212;
+  --color-tertiary: #10b981; /* Emerald Green */
+  --color-tertiary-rgb: 16, 185, 129;
   --color-accent: #ec4899; /* Cyber Pink */
   --color-accent-rgb: 236, 72, 153;
 
   /* Glassmorphism Dark */
-  --glass-bg: rgba(18, 18, 24, 0.4);
+  --glass-bg: rgba(255, 255, 255, 0.03);
   --glass-border: rgba(255, 255, 255, 0.08);
-  --glass-border-hover: rgba(255, 255, 255, 0.16);
+  --glass-border-hover: rgba(255, 255, 255, 0.15);
   --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   --glass-glow: rgba(99, 102, 241, 0.15);
 
   /* Gradients */
   --grad-primary: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
   --grad-accent: linear-gradient(135deg, var(--color-secondary), var(--color-accent));
-  --grad-text: linear-gradient(135deg, #ffffff 30%, #c7d2fe 70%, #67e8f9 100%);
+  --grad-text: linear-gradient(135deg, #ffffff 30%, #c0c1ff 70%, #4cd7f6 100%);
   --grad-bg: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(99, 102, 241, 0.15) 0%, rgba(6, 182, 212, 0.08) 30%, transparent 60%);
 }
 
