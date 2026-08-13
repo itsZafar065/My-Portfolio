@@ -1,0 +1,2 @@
+import { getPublicData } from "@/lib/data";
+export default async function CategoryPage({ params }: { params: Promise<{ slug: string }> }) { const { slug } = await params; const data = await getPublicData(); const projects = data.projects.filter((p: any) => p.category?.slug === slug); return <main className="section"><div className="container"><h1>Category: {slug}</h1>{projects.map((p: any) => <article className="card" key={p._id}>{p.title}</article>)}</div></main>; }

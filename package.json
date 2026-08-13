@@ -1,24 +1,41 @@
 {
-  "name": "temp-react-app",
+  "name": "premium-developer-portfolio-cms",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "oxlint",
-    "preview": "vite preview"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "seed": "tsx scripts/seed.ts"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.2.1",
+    "bcryptjs": "^3.0.2",
+    "clsx": "^2.1.1",
+    "dotenv": "^17.2.1",
+    "framer-motion": "^12.23.12",
+    "jose": "^6.0.12",
     "lucide-react": "^1.25.0",
+    "mongoose": "^8.17.1",
+    "next": "^15.4.6",
     "react": "^19.2.7",
-    "react-dom": "^19.2.7"
+    "react-dom": "^19.2.7",
+    "react-hook-form": "^7.62.0",
+    "server-only": "^0.0.1",
+    "slugify": "^1.6.6",
+    "sonner": "^2.0.7",
+    "zod": "^4.0.17"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.11",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^24.2.1",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.3",
-    "oxlint": "^1.71.0",
-    "vite": "^8.1.1"
+    "tailwindcss": "^4.1.11",
+    "tsx": "^4.20.4",
+    "typescript": "^5.9.2"
   }
 }
