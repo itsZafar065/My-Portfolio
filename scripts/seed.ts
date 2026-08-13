@@ -12,7 +12,7 @@ async function main() {
   const category = await Category.findOneAndUpdate({ slug: "full-stack-development" }, { name: "Full Stack Development", slug: "full-stack-development", description: "End-to-end product engineering.", enabled: true }, { upsert: true, new: true });
   await SiteSettings.findOneAndUpdate({ singleton: "site" }, {
     singleton: "site",
-    siteName: "Ali Nawaz",
+    siteName: "Zafar",
     siteDescription: "Premium full stack developer portfolio.",
     email: "hello@example.com",
     phone: "+1 555 0100",
@@ -22,7 +22,7 @@ async function main() {
     about: { heading: "Product-minded engineering for serious web experiences.", description: "I design and develop robust interfaces, APIs, and content systems that teams can operate without touching source code." },
     contact: { heading: "Tell me what you are building.", description: "Project brief, goals, timeline, and constraints are enough to start.", cta: "Send message" },
     footer: { text: "Premium full stack development.", copyright: "Copyright 2026" },
-    seo: { title: "Ali Nawaz | Full Stack Developer", description: "Premium full stack developer portfolio and CMS.", keywords: ["Next.js", "MongoDB", "Full Stack Developer"] }
+    seo: { title: "Zafar | Full Stack Developer", description: "Premium full stack developer portfolio and CMS.", keywords: ["Next.js", "MongoDB", "Full Stack Developer"] }
   }, { upsert: true });
   await Project.updateOne({ slug: "cms-commerce-platform" }, { $setOnInsert: { title: "CMS Commerce Platform", slug: "cms-commerce-platform", shortDescription: "A secure commerce dashboard and storefront built for fast catalog operations.", fullDescription: "A full stack commerce platform with role-aware admin workflows, product publishing, media management, and optimized public pages.", category: category._id, technologies: ["Next.js", "TypeScript", "MongoDB", "Tailwind CSS"], projectType: "SaaS / E-commerce", status: "published", featured: true, order: 1, caseStudy: { overview: "A scalable storefront and admin CMS for a growing product team.", problem: "The team needed to ship content changes quickly without developer intervention.", goals: "Improve content velocity, search visibility, and admin safety.", solution: "A protected CMS with structured content, validation, and dynamic public rendering.", keyFeatures: ["Role-based admin", "Database-driven content", "SEO controls", "Audit log"], results: "Reduced content publishing time and improved maintainability." }, seo: { title: "CMS Commerce Platform Case Study", description: "A full stack commerce CMS case study." } } }, { upsert: true });
   await Service.updateOne({ title: "Full Stack Development" }, { title: "Full Stack Development", description: "Secure frontend, backend, database, and deployment-ready architecture.", features: ["Next.js", "APIs", "MongoDB"], enabled: true, order: 1 }, { upsert: true });

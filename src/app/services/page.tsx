@@ -1,2 +1,18 @@
+import { PublicPageShell } from "@/components/public-layout";
 import { getPublicData } from "@/lib/data";
-export default async function ServicesPage() { const { services } = await getPublicData(); return <main className="section"><div className="container"><h1>Services</h1><div className="grid">{services.map((s: any) => <article className="card" key={s._id}><h2>{s.title}</h2><p>{s.description}</p></article>)}</div></div></main>; }
+
+export default async function ServicesPage() {
+  const { services } = await getPublicData();
+  return (
+    <PublicPageShell eyebrow="Services" title="Focused services for modern web products." description="Clean public UI, robust admin systems, and scalable full stack architecture.">
+      <section className="section service-list">
+        {services.map((service: any) => (
+          <article className="glass-card service-card" key={service._id}>
+            <span>{service.icon || "UI"}</span>
+            <div><h3>{service.title}</h3><p>{service.description}</p></div>
+          </article>
+        ))}
+      </section>
+    </PublicPageShell>
+  );
+}

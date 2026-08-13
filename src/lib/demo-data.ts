@@ -1,31 +1,31 @@
 import type { SiteSettings } from "./types";
 
 export const demoSettings: SiteSettings = {
-  siteName: "Ali Nawaz",
-  siteDescription: "Premium full stack developer portfolio and CMS.",
-  email: "hello@example.com",
+  siteName: "Zafar",
+  siteDescription: "Full stack developer portfolio for refined web apps, dashboards, and CMS platforms.",
+  email: "hello@zafar.dev",
   phone: "+1 555 0100",
   location: "Remote / Worldwide",
-  social: { github: "https://github.com", linkedin: "https://linkedin.com" },
+  social: { github: "https://github.com/itsZafar065", linkedin: "https://linkedin.com" },
   hero: {
     label: "Full Stack Developer",
-    heading: "I build secure, CMS-driven web platforms with a premium finish.",
-    description: "A production-style portfolio powered by Next.js, protected admin workflows, and database-ready content modules.",
-    primaryButton: "View projects",
-    secondaryButton: "Start a project"
+    heading: "I design and build polished web products that feel fast, clear, and premium.",
+    description: "I am Zafar, a full stack developer focused on modern interfaces, secure dashboards, CMS platforms, and responsive product experiences.",
+    primaryButton: "Explore work",
+    secondaryButton: "Contact me"
   },
   about: {
-    heading: "Product-minded engineering for serious web experiences.",
-    description: "I design and develop robust interfaces, APIs, and content systems that teams can operate without touching source code.",
+    heading: "Frontend taste with full stack discipline.",
+    description: "I care about the full experience: clean screens, fast interactions, strong backend architecture, and admin tools that make content easy to manage.",
     profileImage: ""
   },
   contact: {
-    heading: "Tell me what you are building.",
-    description: "Share the shape of your project and I’ll reply with the next practical step.",
+    heading: "Let us shape your next web product.",
+    description: "Share the project goal, timeline, and what needs to feel better. I will reply with a clear next step.",
     cta: "Send message"
   },
   footer: { text: "Premium full stack development.", copyright: "Copyright 2026" },
-  seo: { title: "Ali Nawaz | Full Stack Developer", description: "Premium full stack developer portfolio and CMS.", keywords: ["Next.js", "MongoDB", "CMS"] }
+  seo: { title: "Zafar | Full Stack Developer", description: "Premium full stack developer portfolio and CMS.", keywords: ["Next.js", "MongoDB", "CMS"] }
 };
 
 export const demoProjects = [{
@@ -55,15 +55,19 @@ export const demoPublicData = {
   settings: demoSettings,
   projects: demoProjects,
   categories: [{ _id: "cat-1", name: "Full Stack Development", slug: "full-stack-development", enabled: true }],
-  services: [{ _id: "service-1", title: "Full Stack Development", description: "Secure frontend, backend, database, and deployment-ready architecture." }],
-  skills: ["Next.js", "React", "TypeScript", "Node.js", "MongoDB", "Tailwind CSS"].map((name, index) => ({ _id: `skill-${index}`, name, featured: true })),
-  testimonials: [{ _id: "testimonial-1", clientName: "Avery Stone", company: "Northstar Labs", testimonial: "The CMS gave our team control without compromising design quality." }],
+  services: [
+    { _id: "service-1", title: "Full Stack Development", description: "Secure frontend, backend, database, and deployment-ready architecture.", icon: "FS" },
+    { _id: "service-2", title: "Dashboard UI", description: "Clean admin panels, analytics screens, and CMS interfaces built for daily use.", icon: "UI" },
+    { _id: "service-3", title: "API Integration", description: "Reliable integrations, validation, authentication, and scalable data flows.", icon: "API" }
+  ],
+  skills: ["Next.js", "React", "TypeScript", "Node.js", "MongoDB", "Tailwind CSS", "Framer Motion", "Mongoose"].map((name, index) => ({ _id: `skill-${index}`, name, featured: true })),
+  testimonials: [{ _id: "testimonial-1", clientName: "Avery Stone", company: "Northstar Labs", testimonial: "Zafar turned a rough idea into a sharp product experience with a dashboard our team actually enjoys using." }],
   faqs: [{ _id: "faq-1", question: "Can I edit portfolio content without code?", answer: "Yes. In production, content is managed from the protected dashboard and served dynamically from MongoDB." }]
 };
 
 export const demoAdmin = {
   _id: "demo-admin",
-  name: "Ali Nawaz",
+  name: "Zafar",
   email: process.env.ADMIN_EMAIL ?? "admin@portfolio.local",
   role: "super_admin",
   status: "active"

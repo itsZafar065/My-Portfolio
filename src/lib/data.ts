@@ -7,22 +7,22 @@ import { AuditLog } from "@/models/AuditLog";
 import type { SiteSettings as Settings } from "./types";
 
 const defaults: Settings = {
-  siteName: "Ali Nawaz",
+  siteName: "Zafar",
   siteDescription: "Premium full stack developer portfolio and case-study archive.",
-  email: "hello@example.com",
+  email: "hello@zafar.dev",
   phone: "+1 555 0100",
   location: "Remote",
   social: { github: "https://github.com", linkedin: "https://linkedin.com" },
   hero: {
     label: "Full Stack Developer",
-    heading: "I build precise, scalable web products for ambitious teams.",
-    description: "Next.js, React, TypeScript, secure APIs, and CMS-backed product experiences with a polished client-facing finish.",
-    primaryButton: "View projects",
-    secondaryButton: "Start a project"
+    heading: "I design and build polished web products that feel fast, clear, and premium.",
+    description: "I am Zafar, a full stack developer focused on modern interfaces, secure dashboards, CMS platforms, and responsive product experiences.",
+    primaryButton: "Explore work",
+    secondaryButton: "Contact me"
   },
   about: {
-    heading: "Engineering craft with product taste.",
-    description: "I partner with founders and teams to turn complex requirements into fast, maintainable, conversion-minded digital products.",
+    heading: "Frontend taste with full stack discipline.",
+    description: "I care about the full experience: clean screens, fast interactions, strong backend architecture, and admin tools that make content easy to manage.",
     profileImage: ""
   },
   contact: {
@@ -31,7 +31,7 @@ const defaults: Settings = {
     cta: "Send message"
   },
   footer: { text: "Available for selected full stack projects.", copyright: "All rights reserved." },
-  seo: { title: "Ali Nawaz | Full Stack Developer", description: "Premium full stack developer portfolio.", keywords: ["Next.js", "React", "Full Stack Developer"] }
+  seo: { title: "Zafar | Full Stack Developer", description: "Premium full stack developer portfolio.", keywords: ["Next.js", "React", "Full Stack Developer"] }
 };
 
 export async function getSettings() {
