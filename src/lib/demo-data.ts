@@ -28,28 +28,108 @@ export const demoSettings: SiteSettings = {
   seo: { title: "Zafar | Full Stack Developer", description: "Premium full stack developer portfolio and CMS.", keywords: ["Next.js", "MongoDB", "CMS"] }
 };
 
-export const demoProjects = [{
-  _id: "demo-project-1",
-  title: "CMS Commerce Platform",
-  slug: "cms-commerce-platform",
-  shortDescription: "A secure commerce dashboard and storefront built for fast catalog operations.",
-  fullDescription: "A full stack commerce platform with role-aware admin workflows, publishing controls, SEO fields, and optimized public pages.",
-  technologies: ["Next.js", "TypeScript", "MongoDB", "Tailwind CSS"],
-  projectType: "SaaS / E-commerce",
-  status: "published",
-  featured: true,
-  order: 1,
-  galleryImages: [],
-  caseStudy: {
-    overview: "A scalable storefront and admin CMS for a growing product team.",
-    problem: "The team needed to ship portfolio and product changes without developer intervention.",
-    goals: "Improve content velocity, search visibility, and admin safety.",
-    solution: "A protected CMS with structured content, validation, publishing status, and dynamic public rendering.",
-    keyFeatures: ["Role-based admin", "Database-driven content", "SEO controls", "Audit log"],
-    results: "Reduced content publishing time and improved maintainability."
+export const demoProjects = [
+  {
+    _id: "wp-project-1",
+    title: "Pastaliano – Italian Restaurant",
+    slug: "pastaliano-italian-restaurant",
+    shortDescription: "A fully functional E-commerce website for a food brand, built using WooCommerce and Elementor.",
+    fullDescription: "Pastaliano is a fully functional E-commerce web platform engineered for an authentic Italian food brand. Built with WordPress, WooCommerce, and Elementor, it features a custom product menu, dynamic ordering capabilities, seamless payment integration, and a mobile-optimized UI.",
+    thumbnail: "/pastaliano.png",
+    coverImage: "/pastaliano.png",
+    galleryImages: ["/pastaliano.png"],
+    technologies: ["WordPress", "WooCommerce", "Elementor", "PHP", "CSS3", "Responsive UI"],
+    projectType: "E-Commerce / Food & Beverage",
+    projectUrl: "https://pastaliano.co.uk/",
+    status: "published",
+    featured: true,
+    order: 1,
+    caseStudy: {
+      overview: "An end-to-end e-commerce experience for Pastaliano Italian Restaurant, enabling online food ordering, menu exploration, and customer checkout.",
+      problem: "The client needed a modern, appetizing online store to showcase their Italian culinary menu and drive direct online orders.",
+      goals: "Build a fast-loading, mobile-friendly WooCommerce storefront with custom product categories and intuitive checkout flow.",
+      solution: "Designed and developed a sleek WordPress storefront using Elementor and WooCommerce custom styling with optimized speed and mobile UX.",
+      keyFeatures: ["Custom Menu Showcase", "WooCommerce Ordering & Cart", "Seamless Online Checkout", "Fully Responsive Layout", "SEO & Performance Optimization"],
+      results: "Significantly enhanced online brand presence and increased direct digital food orders for the restaurant."
+    },
+    seo: { title: "Pastaliano – Italian Restaurant E-Commerce", description: "WooCommerce and Elementor website for Pastaliano Italian Restaurant." }
   },
-  seo: { title: "CMS Commerce Platform Case Study", description: "A full stack CMS case study." }
-}];
+  {
+    _id: "wp-project-2",
+    title: "The Paleta Bar",
+    slug: "the-paleta-bar",
+    shortDescription: "A vibrant and engaging WordPress website for a dessert brand with custom product showcases.",
+    fullDescription: "The Paleta Bar is a vibrant, engaging WordPress web platform built for a premier dessert brand. Designed using Elementor, it features visually stunning product galleries, store location finders, interactive menus, and fluid responsive design across all devices.",
+    thumbnail: "/paletabar.png",
+    coverImage: "/paletabar.png",
+    galleryImages: ["/paletabar.png"],
+    technologies: ["WordPress", "Elementor", "PHP", "JavaScript", "HTML5/CSS3"],
+    projectType: "Brand Showcase / Dessert & Retail",
+    projectUrl: "https://thepaletabar.com/",
+    status: "published",
+    featured: true,
+    order: 2,
+    caseStudy: {
+      overview: "A brand-focused showcase website for The Paleta Bar designed to highlight handcrafted gelatos and frozen treats with an energetic aesthetic.",
+      problem: "The brand required a modern digital presence that reflected their fun, colorful identity while helping customers find nearby locations.",
+      goals: "Deliver a visually immersive website with smooth animations, location lookup, and seamless mobile usability.",
+      solution: "Crafted a custom Elementor-driven layout with custom color schemes, high-res media integration, and location discovery features.",
+      keyFeatures: ["Interactive Flavor & Product Showcase", "Store Location Finder", "Vibrant Brand Identity UI", "Fully Responsive Design"],
+      results: "Increased customer engagement and streamlined store location discovery for visitors."
+    },
+    seo: { title: "The Paleta Bar – Dessert Brand Website", description: "Vibrant WordPress and Elementor website for The Paleta Bar." }
+  },
+  {
+    _id: "wp-project-3",
+    title: "Founders of Pakistan",
+    slug: "founders-of-pakistan",
+    shortDescription: "A professional corporate platform designed for high-level networking and award recognitions.",
+    fullDescription: "Founders of Pakistan is a sophisticated corporate digital platform created for executive networking and leadership recognition. Developed with WordPress and Elementor, it features high-tier corporate branding, award winner profiles, event showcases, and leadership directories.",
+    thumbnail: "/founders.png",
+    coverImage: "/founders.png",
+    galleryImages: ["/founders.png"],
+    technologies: ["WordPress", "Elementor", "PHP", "Corporate UI", "Custom Post Types"],
+    projectType: "Corporate / Networking Platform",
+    projectUrl: "https://foundersofpakistan.com/",
+    status: "published",
+    featured: true,
+    order: 3,
+    caseStudy: {
+      overview: "A prestigious platform highlighting business pioneers, award recipients, and networking opportunities across Pakistan.",
+      problem: "The organization needed an elegant, authoritative portal to present profiles of prominent founders and facilitate executive connections.",
+      goals: "Establish a clean, modern corporate layout with structured member profiles and high-level visual polish.",
+      solution: "Built a customized WordPress platform leveraging Elementor for flexible content sections, custom directories, and event highlights.",
+      keyFeatures: ["Executive Member Directories", "Award Winner Profiles", "Event & Recognition Modules", "Sophisticated Corporate Aesthetic"],
+      results: "Elevated the platform's prestige and streamlined delegate directory navigation."
+    },
+    seo: { title: "Founders of Pakistan – Corporate Networking", description: "Corporate WordPress website for Founders of Pakistan leadership platform." }
+  },
+  {
+    _id: "wp-project-4",
+    title: "MRQ Production",
+    slug: "mrq-production",
+    shortDescription: "A WordPress media production platform showcasing Islamic audio, video, and digital content.",
+    fullDescription: "MRQ Production is a modern media production web platform built on WordPress. Designed to showcase Islamic audio, video releases, and digital media production services, it features media players, portfolio galleries, and service request channels.",
+    thumbnail: "/mrq.png",
+    coverImage: "/mrq.png",
+    galleryImages: ["/mrq.png"],
+    technologies: ["WordPress", "Elementor", "Media Embeds", "PHP", "UI/UX"],
+    projectType: "Media & Production",
+    projectUrl: "https://mrqproduction.com/",
+    status: "published",
+    featured: true,
+    order: 4,
+    caseStudy: {
+      overview: "A digital portal for MRQ Production to stream and distribute media content while highlighting video/audio production services.",
+      problem: "The client needed a organized, clean media portfolio to feature audio/video productions without cluttering user navigation.",
+      goals: "Create a structured, fast-loading site with seamless video/audio embedding and clear service inquiry paths.",
+      solution: "Developed an Elementor-based media portfolio featuring customized audio/video grid layouts and clean service landing sections.",
+      keyFeatures: ["Audio & Video Media Galleries", "Service Showcase", "Responsive Media Players", "Contact & Booking Forms"],
+      results: "Centralized digital media catalog and expanded client service outreach."
+    },
+    seo: { title: "MRQ Production – Media & Production Portal", description: "WordPress media production platform for MRQ Production." }
+  }
+];
 
 export const demoPublicData = {
   settings: demoSettings,

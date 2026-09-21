@@ -9,7 +9,17 @@ export default async function ProjectsPage() {
       <section className="section project-grid">
         {projects.map((project: any, index: number) => (
           <Link className="project-card glass-card" href={`/projects/${project.slug}`} key={project._id}>
-            <div className="project-art"><span>{String(index + 1).padStart(2, "0")}</span></div>
+            <div className="project-art" style={{ overflow: "hidden", position: "relative", minHeight: "180px" }}>
+              {project.thumbnail || project.coverImage ? (
+                <img
+                  src={project.thumbnail || project.coverImage}
+                  alt={project.title}
+                  style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }}
+                />
+              ) : (
+                <span>{String(index + 1).padStart(2, "0")}</span>
+              )}
+            </div>
             <p className="pill muted-pill">{project.projectType || "Project"}</p>
             <h3>{project.title}</h3>
             <p>{project.shortDescription}</p>

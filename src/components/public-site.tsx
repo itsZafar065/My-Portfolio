@@ -110,9 +110,19 @@ export function PublicHome({ data }: { data: any }) {
           {projects.map((project: any, index: number) => (
             <motion.div variants={fadeUp} key={project._id}>
               <Link className="project-card glass-card" href={`/projects/${project.slug}`}>
-                <div className="project-art">
-                  <span>{String(index + 1).padStart(2, "0")}</span>
-                  <MousePointer2 size={28} />
+                <div className="project-art" style={{ overflow: "hidden", position: "relative", minHeight: "180px" }}>
+                  {project.thumbnail || project.coverImage ? (
+                    <img
+                      src={project.thumbnail || project.coverImage}
+                      alt={project.title}
+                      style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }}
+                    />
+                  ) : (
+                    <>
+                      <span>{String(index + 1).padStart(2, "0")}</span>
+                      <MousePointer2 size={28} />
+                    </>
+                  )}
                 </div>
                 <p className="pill muted-pill">{project.projectType || "Project"}</p>
                 <h3>{project.title}</h3>
